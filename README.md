@@ -2,7 +2,7 @@ This repository contains classifiers and inference/evaluation methods for the pa
 
 Included classifiers are:
 
-- BR (modified from Meka)
+- BR (1. modified from Meka, 2. a python script using LIBLINEAR for the SVMs)
 - SCVB
 - SCVB-Dependency
 - Dependency-LDA
