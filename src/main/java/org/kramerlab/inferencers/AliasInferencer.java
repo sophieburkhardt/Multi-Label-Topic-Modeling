@@ -1,3 +1,27 @@
+/**
+ * AliasInferencer.java
+ * 
+ * Copyright (C) 2017 Sophie Burkhardt
+ *
+ * This file is part of Multi-Label-Topic-Modeling.
+ * 
+ * Multi-Label-Topic-Modeling is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation; either version 3 of the License, or (at
+ * your option) any later version.
+ * 
+ * Multi-Label-Topic-Modeling is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
+ * 02110-1301 USA
+ *
+ */
+
 package org.kramerlab.inferencers;
 
 import org.kramerlab.interfaces.*;
@@ -326,7 +350,7 @@ public class AliasInferencer implements Inferencer{
 
             while(!accept){ 
 
-                if(s_w[type].size()<100){
+                if(s_w[type].size()<1){
                     //System.out.println("create more samples for type "+type);
                     createMoreSamples(k,type);
                 }
@@ -468,7 +492,7 @@ public class AliasInferencer implements Inferencer{
         }
         //check if another sample is available
         //if no, generate new Alias for current word, generate samples, then use MH to accept or reject
-        if(s_w[type].size()<100){
+        if(s_w[type].size()<1){
 
             createMoreSamples(k, type);
 
@@ -476,7 +500,7 @@ public class AliasInferencer implements Inferencer{
         int newTopic=-1;
 
         rejections++;
-        if(s_w[type].size()<100){
+        if(s_w[type].size()<1){
             System.out.println("create more samples for type "+type);
             createMoreSamples(k,type);
         }
