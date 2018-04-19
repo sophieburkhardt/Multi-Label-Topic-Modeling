@@ -1,4 +1,4 @@
-This repository contains classifiers and inference/evaluation methods for the paper Online Multi-Label Dependency Topic Models for Text Classification. The paper will be published in the Machine Learning Journal.
+This repository contains classifiers and inference/evaluation methods for the paper Online Multi-Label Dependency Topic Models for Text Classification. The paper is published in the Machine Learning Journal [https://doi.org/10.1007/s10994-017-5689-6](https://doi.org/10.1007/s10994-017-5689-6).
 
 Included classifiers are:
 
