@@ -11,7 +11,7 @@ Included classifiers are:
  
  to build the project run `mvn package`
  to install Mallet in your maven repository run 
- --mvn install:install-file -Dfile=jars/mallet-2.0.9-SNAPSHOT.jar -DpomFile=jars/mallet-2.0.9-SNAPSHOT.pom
+ `mvn install:install-file -Dfile=jars/mallet-2.0.9-SNAPSHOT.jar -DpomFile=jars/mallet-2.0.9-SNAPSHOT.pom`
  to run a classifier, you need to specify options in the `config.txt` file, e.g. for Dependency-LDA:
 ```
  --dataFilename data/datafile --testDataFilename data/datafile --datasetName name --numIterations 100 --numTopWords 20 --wordThreshold 5 --batch --dependency --alphaSum 0 --testAlphaSum 30 --beta 0.01 --beta_c 0.01 --gamma 10 --testGamma 10 --eta 100 --testEta 100 --innerIterations 1 --t 100 --supervised true --trainingPercentage 1.0 --evaluationInterval 100 --writeDistributions false --print false --run 1
